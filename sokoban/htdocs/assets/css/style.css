@@ -1,0 +1,100 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: #ffffe7;
+    height: 100%;
+}
+header {
+    background-color: #c7c7f7;
+}
+nav {
+    background-color: #c7f7f7;
+}
+aside {
+    background-color: #f7c7c7;
+    width: 15%;
+    float: left;
+}
+article {
+    background-color: #c7c7c7;
+    width: 85%;
+    float: left;
+}
+section {
+    background-color: #c7f7c7;
+}
+footer {
+    background-color:#e7e7e7;
+}
+.flexbox {
+    display: flex;
+}
+.blacktext{
+    color: #0f0f0f;
+}
+.redtext {
+    color: #ff3333;
+}
+.bluetext {
+    color: #3333ff;
+}
+.irontext {
+    color: #efefaf;
+}
+.browntext {
+    color: #9f5f5f;
+}
+.sectext {
+    color: #7f7fef;
+}
+.lighttext {
+    color: #9f9f7f;
+}
+#about {
+    float: right;
+    margin: 0px 2em 0px 0px;
+}
+.milky {
+    background-color: #ffffea;
+}
+nav > ul > li {
+    display:inline-block;
+    height:2em;
+    min-width: 4em;
+    line-height: 2em;
+    text-align: center;
+    padding: 0px .5em;
+    margin: 0px .25em;
+    border: none;
+    background-color: bisque;
+}
+nav > ul > li {
+    background-color: #dfdfdf;
+}
+nav > ul > li:hover [id*=drop_] {
+    display: block;
+}
+.drop_box {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0px;
+    margin: 0px .25em;
+}
+.drop_box ul li {
+    min-width: 4em;
+    text-align: center;
+    padding: 0px .5em;
+    margin: .25em 0px;
+    border: none;
+    background-color: bisque;
+}
+.drop_box li:hover {
+    color: DodgerBlue;
+    background-color: Salmon;
+}
+#about:hover #drop_about {
+    display: block;
+}
