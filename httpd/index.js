@@ -1,8 +1,8 @@
 'use strict';
 
 let http = require('http');
-
-const routingTable = {
+const routingTable = require('./config.json');
+/*const routingTable = {
  '/': {
  url: '../htdocs/index.html',
  type: 'text/html'
@@ -16,7 +16,7 @@ const routingTable = {
  type: 'text/css'
  },
 };
-
+*/
 
 let serve = (response, fname, datatype) => {
 	let fs = require('fs');
@@ -58,7 +58,7 @@ if (request.url in routingTable) {
 		 response.end();
 		}
 
-		
+
 	});
 }).listen(8088);
 
